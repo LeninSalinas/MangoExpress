@@ -1,0 +1,120 @@
+#copyright{
+    text-align: center;
+
+}
+H2{
+    font-family: 'Times New Roman', Times, serif;
+}
+#logg{
+    width: 50%;
+    height: auto;
+    background-color: white;
+    padding-top: 50px;
+    padding-block-end: 50px;
+    border-radius: 15px;
+}
+#bd{
+    background-color: rgb(92, 223, 53);
+    padding-top:150px;
+
+}
+
+#titulo{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#quejesu{
+    width: 50%;
+}
+
+
+#login{
+    width: auto;
+    height: auto;
+    text-align: right;
+    padding: 10px;
+    margin: 10px;
+}
+
+#espacio{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+
+#footer{
+    width: 100%;
+    height: auto;
+    background-color: #4bf37d;
+}
+#facebook{
+    background-color: white;
+
+}
+#twitter{
+    background-color: white;
+    border-radius: 10px;
+}
+#instagram{
+    background-color: white;
+    border-radius: 10px;
+}
+#barra{
+    width: 100%;
+    height: 50px;
+    background-color: #13ca4a;
+}
+#blanco{
+    width: 100%;
+    height: 25px;
+    background-color:white;
+  }
+
+.contenedor{
+    float: center;
+    background-color: rgb(253, 154, 5);
+    width: 50%;
+    height: auto;
+    padding: 20px;
+}
+
+#contenedor_plus{
+    width: 90%;
+    height: auto;
+    background-color: rgb(253, 154, 5);
+    padding: 20px;
+}
+
+#contenedor_mediano{
+
+    background-color: rgb(253, 154, 5);
+    width: 70%;
+    height: auto;
+    padding: 15px;
+}
+#contenedor_pequeño{
+
+    background-color: rgb(253, 154, 5);
+    width: 50%;
+    height: auto;
+    padding: 15px;
+}
+
+.imagecaja{
+    width: 60%;
+    height: 80%;
+    margin-top: 8px;   
+
+}
+#carrusel{
+    width: 75%;
+    height: 20%;
+}
+
+ 
+.mapa{
+
+    float: center;
+    width: 30%;
+}
