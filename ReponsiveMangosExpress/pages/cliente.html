@@ -11,7 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script type="text/javascript" src="validaciones.js "></script> 
-    <title>NACIONAL</title>
+    <title>EMPLEADO</title>
 </head>
 
 
@@ -68,165 +68,99 @@
           </nav>
         </div>
     </header><!--fin del encabezado-->
+
  <main><!--inicio del cuerpo-->
    
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb bg-light">
-      <li class="breadcrumb-item"><a href="../pages/servicios.html">Servicios</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Envios Nacionales</li>
-    </ol>
-  </nav>
-
-
-
-
     <div id="blanco"></div>
-    <CENTER><H2>ENVIOS NACIONALES</H2></CENTER>
     <div class="row" >
         <div class="col-2" ></div>
         <div class="col-9">
        <!--inicio del cuadro-->
        <div class="row" align="center" >
-        <div class="col-md-12" >
-     
- </div>
+           <div class="col-md-12" >
+        <h3>Registrar Usuario</h3>
     </div>
- <div class="row  container-fluid" style="background-color:rgb(230, 238, 238); border-radius: 5px;">  
-   <!--Inicio del formulario-->
-   <form name="nacionales" id="nacionales" method="get">
-     <br>
-     <center><h3>Informacion Usuario</h3></center>
-     <div class="form-row">
-       
-         <div class="form-group col-md-3">
-             <label for="input">Identificador Cliente</label>
-             <input type="text" class="form-control" id="txtid" value="" disabled>
-         </div>
-
-
-         <div class="form-group col-md-3">
-             <label for="input">Nombre completo</label>
-             <input type="text" class="form-control" id="txtremitente" value="">
-         </div>
-
-         <div class="form-group col-md-3">
-           <label for="input">Identidad o Passaporte</label>
-           <input type="text" class="form-control" id="txtidremitente" value="">
        </div>
-
-       <div class="form-group col-md-3">
-         <label for="validationServer04" class="form-label">Seleccione su pais de Origen</label><br>
-         <select class="form-select is-invalid" id="cmbpais " aria-describedby="validationServer04Feedback" required>
-           <option selected disabled value="">Seleccione su pais</option>
-           <option>...</option>
-         </select>
-
-     </div>
-     </div>
-
-     <div class="form-row">
-       
-         <div class="form-group col-md-4">
-             <label for="input">Direccion</label>
-             <input type="text" class="form-control" id="txtdireccion" value="">
-         </div>
+    <div class="row  container-fluid" style="background-color:rgb(230, 238, 238); border-radius: 5px;">  
+      <!--Inicio del formulario-->
+      <form name="cliente" id="cliente" method="get">
+        <br>
+        <div class="form-row">
+          
+            <div class="form-group col-md-3">
+                <label for="input">Identificador Cliente</label>
+                <input type="text" class="form-control" id="txtid" value="" disabled>
+            </div>
 
 
-         <div class="form-group col-md-4">
-             <label for="input">Telefono</label>
-             <input type="text" class="form-control" id="txttelefono" value="">
-         </div>
+            <div class="form-group col-md-3">
+                <label for="input">Nombre completo</label>
+                <input type="text" class="form-control" id="txtnombre" value="">
+            </div>
 
-         <div class="form-group col-md-4">
-           <label for="input">E-mail</label>
-           <input type="email" class="form-control" id="txtemail" value="">
-       </div>
+            <div class="form-group col-md-3">
+              <label for="input">Identidad o Passaporte</label>
+              <input type="text" class="form-control" id="txtidentidad" value="">
+          </div>
 
-      
-     </div>   
-     <br><br>
+          <div class="form-group col-md-3">
+            <label for="validationServer04" class="form-label">Seleccione su pais de Origen</label><br>
+            <select class="form-select is-invalid" id="cmbpais " aria-describedby="validationServer04Feedback" required>
+              <option selected disabled value="">Seleccione su pais</option>
+              <option>...</option>
+            </select>
 
-     <center><h3> Destinatario</h3></center>
-     <div class="form-row">
-        
-      <div class="form-group col-md-3">
-          <label for="input">Identificador Cliente</label>
-          <input type="text" class="form-control" id="txtidentificador" value="" >
-      </div>
+        </div>
+        </div>
 
-
-      <div class="form-group col-md-3">
-          <label for="input">Nombre Destinatario</label>
-          <input type="text" class="form-control" id="txtdestinatario" value="">
-      </div>
-
-      <div class="form-group col-md-3">
-        <label for="input">Identidad o Passaporte</label>
-        <input type="text" class="form-control" id="txtiddestinatario" value="">
-    </div>
-
-    <div class="form-group col-md-3">
-      <label for="validationServer04" class="form-label">Seleccione su pais de Origen</label><br>
-      <select class="form-select is-invalid" id="cmbpais " aria-describedby="validationServer04Feedback" required>
-        <option selected disabled value="">Seleccione su pais</option>
-        <option>...</option>
-      </select>
-
-  </div>
-  </div>
+        <div class="form-row">
+          
+            <div class="form-group col-md-4">
+                <label for="input">Direccion</label>
+                <input type="text" class="form-control" id="txtdireccion" value="">
+            </div>
 
 
- 
-  <div class="form-row">
-        
-    <div class="form-group col-md-4">
-        <label for="input">Domicilio de entrega</label>
-        <input type="text" class="form-control" id="txtdomicilio" value="">
-    </div>
+            <div class="form-group col-md-4">
+                <label for="input">Telefono</label>
+                <input type="text" class="form-control" id="txttelefono" value="">
+            </div>
 
+            <div class="form-group col-md-4">
+              <label for="input">E-mail</label>
+              <input type="email" class="form-control" id="txtemail" value="">
+          </div>
 
-    <div class="form-group col-md-4">
-        <label for="input">Telefono</label>
-        <input type="text" class="form-control" id="txttelefonodestinatario" value="">
-    </div>
+         
+        </div>
 
-    <div class="form-group col-md-4">
+            
+            
 
-      <label for="input">Identificacion de remitente</label>
-        <input type="text" class="form-control" id="txtremitented" value="">
-    </select>
-  </div>
-
- <br>
-</div> <center>
-  <button class="btn btn-success" type="button" id="btnenviar" onclick="envnacionales()">Registrar</button>
-  <button class="btn btn-warning" type="button" id="btnlimpiar" onclick="limpiezanacional()" >Limpiar</button>
-  <button class="btn btn-danger" type="button" id="btncancelar">Cancelar</button>
-</center>
-       <br>
-      
-       </form>
+          
+          
+            <div>
+            <center>
+              <button class="btn btn-success" type="button" id="btnenviar" onclick="valcliente()" ondblclick="valcliente()" >Registrar</button>
+              <button class="btn btn-warning" type="button" id="btnlimpiar" onclick="limpiezacliente()">Limpiar</button>
+              <button class="btn btn-danger" type="button" id="btncancelar">Cancelar</button>
+            </center>
+          </div>
+          <br>
+          </form>
+      <!--Fin del formulario-->
    </div>
-   <br>
-   
 
 
 
-       
-        
-   </div>
-   
+
 </div>
-
 </div>
 
 
 <br>
 <br>
-
 <div id="blanco"></div>
-
-
         <div class="card text-center bg-light">
             <div class="card-body">
               <h5 class="card-title">MANGOS EXPRESS</h5>
@@ -299,6 +233,7 @@
         </div>
          
     </footer><!--fin del pie de pagin-->
+    
     <script type="text/javascript" src="../pages/validaciones.js"></script> 
 </body>
 </html>

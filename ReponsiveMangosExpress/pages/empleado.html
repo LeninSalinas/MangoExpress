@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
+    <script type="text/javascript" src="validaciones.js "></script> 
     <title>EMPLEADO</title>
 </head>
 
@@ -72,77 +72,115 @@
    
     <div id="blanco"></div>
     <div class="row" >
-        <div class="col-2" ></div>
-        <div class="col-8">
-       <!--inicio del cuadro-->
-       <div class="row" >
-           <div class="col-3" >
-        <h3>Empleado</h3>
+      <div class="col-2" ></div>
+      <div class="col-9">
+     <!--inicio del cuadro-->
+     <div class="row" align="center" >
+         <div class="col-md-12" >
+      <h3>Registrar Empleado</h3>
+  </div>
+     </div>
+  <div class="row  container-fluid" style="background-color:rgb(230, 238, 238); border-radius: 5px;">  
+    <!--Inicio del formulario-->
+    <form name="empleado" id="empleado" method="get">
+      <br>
+      <div class="form-row">
+        
+          <div class="form-group col-md-3">
+              <label for="input">Identificador del empleado</label>
+              <input type="text" class="form-control" id="txtid" value="" disabled>
+          </div>
+
+
+          <div class="form-group col-md-3">
+              <label for="input">Nombre completo</label>
+              <input type="text" class="form-control" id="txtnombre" value="">
+          </div>
+
+          <div class="form-group col-md-3">
+            <label for="input">Identidad o Passaporte</label>
+            <input type="text" class="form-control" id="txtidentidad" value="">
+        </div>
+
+        <div class="form-group col-md-3">
+          <label for="validationServer04" class="form-label">Seleccione su pais de Origen</label><br>
+          <select class="form-select is-invalid" id="cmbpais " aria-describedby="validationServer04Feedback" required>
+            <option selected disabled value="">Seleccione su pais</option>
+            <option>...</option>
+          </select>
+
+      </div>
+      </div>
+
+      <div class="form-row">
+        
+          <div class="form-group col-md-3">
+              <label for="input">Direccion</label>
+              <input type="text" class="form-control" id="txtdireccion" value="">
+          </div>
+
+
+          <div class="form-group col-md-3">
+              <label for="input">Telefono</label>
+              <input type="text" class="form-control" id="txttelefono" value="">
+          </div>
+
+          <div class="form-group col-md-3">
+            <label for="input">E-mail</label>
+            <input type="email" class="form-control" id="txtemail" value="">
+        </div>
+
+        <div class="form-group col-md-3">
+          <label for="validationServer04" class="form-label">Sucursal a Asignar</label><br>
+          <select class="form-select is-invalid" id="cmbpais " aria-describedby="validationServer04Feedback" required>
+            <option selected disabled value="">Selecione sucursal</option>
+            <option>...</option>
+          </select>
+      </div>
+        
+
+       
+      </div>
+
+      <div class="form-row">
+        
+        
+
+      <div class="form-group col-md-3">
+        <label for="validationServer04" class="form-label">Departamento</label><br>
+        <select class="form-select is-invalid" id="cmbpais " aria-describedby="validationServer04Feedback" required>
+          <option selected disabled value="">Seleccione departamento</option>
+          <option>...</option>
+        </select>
     </div>
-       </div>
-    <div class="row  container-fluid" style="background-color:rgb(230, 238, 238); border-radius: 5px; box-shadow: 5px 10px #888888;">
-        <form class="row g-3 needs-validation " novalidate>
-          <div class="col-md-3">
-            <label for="validationCustom01" class="form-label">Nombre Empleado</label>
-            <input type="text" class="form-control" id="validationCustom01" value="" required>
-            <div class="valid-feedback">
-              Looks good!
-            </div>
-            <label for="validationCustom01" class="form-label">Fecha Nacimiento</label>
-            <input type="text" class="form-control" id="validationCustom01" value="" required>
-            <div class="valid-feedback">
-              Looks good!
-            </div>
-            <label for="validationCustom01" class="form-label">Correo Electronico</label>
-            <input type="text" class="form-control" id="validationCustom01" value="@" required>
-            <div class="valid-feedback">
-              Looks good!
-            </div><br>
-          </div>
-          <div class="col-md-3">
-            <label for="validationCustom01" class="form-label">Apellido</label>
-            <input type="text" class="form-control" id="validationCustom01" value="" required>
-            <div class="valid-feedback">
-              Looks good!
-            </div>
-            <label for="validationCustom01" class="form-label">Direcion</label>
-            <input type="text" class="form-control" id="validationCustom01" value="" required>
-            <div class="valid-feedback">
-              Looks good!
-            </div>
-          </div>
-          <div class="col-md-3">
-            <label for="validationCustom01" class="form-label">Identidad</label>
-            <input type="text" class="form-control" id="validationCustom01" value="" required>
-            <div class="valid-feedback">
-              Looks good!
-            </div>
-            <label for="validationCustom02" class="form-label">Numero de Telefono</label>
-            <input type="text" class="form-control" id="validationCustom02" value="" required>
-            <div class="valid-feedback">
-              Looks good!
-            </div>
-          </div>  
-          <div class="col-md-2">
-            <label for="validationCustom01" class="form-label">Pais</label>
-            <input type="text" class="form-control" id="validationCustom01" value="" required>
-            <div class="valid-feedback">
-              Looks good!
-            </div>
-            <label for="validationCustom03" class="form-label">Genero</label>
-            <input type="text" class="form-control" id="validationCustom03" required>
-            <div class="valid-feedback">
-              Looks good!
-            </div><br>
-          </div>
-         
-          <div class="col-md-12">
-            <button class="btn btn-primary" type="submit">Submit form</button>
-          </div>
+      
+
+     
+    </div>
+
+          
+          
+
+        
+        
+          <div>
+          <center>
+            <button class="btn btn-success" type="button" id="btnenviar" onclick="valempleado()" ondblclick="valempleado()" >Registrar</button>
+            <button class="btn btn-warning" type="button" id="btnlimpiar" onclick="limpiezaempleado()">Limpiar</button>
+            <button class="btn btn-danger" type="button" id="btncancelar">Cancelar</button>
+          </center>
+        </div>
+        <br>
         </form>
-   </div>
+    <!--Fin del formulario-->
+ </div>
+
+
+
+
 </div>
 </div>
+
 <br>
 <br>
 <div id="blanco"></div>
@@ -218,5 +256,6 @@
         </div>
          
     </footer><!--fin del pie de pagin-->
+    <script type="text/javascript" src="../pages/validaciones.js"></script> 
 </body>
 </html>
