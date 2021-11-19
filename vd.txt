@@ -1,0 +1,1 @@
+$sql = "SELECT cliente.nombres_cliente, cliente.apellidos_cliente, cliente.pais, destinatario.nombres_destinatario, destinatario.identidad_psspt, destinatario.pais, destinatario.telefono, destinatario.domicilio_entrega FROM cliente INNER JOIN destinatario ON cliente.id_cliente=destinatario.id_cliente;";
